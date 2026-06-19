@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishab & Manvi | Wedding Invitation</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content fade-in">
+            <p class="save-date">SAVE THE DATE</p>
+
+            <h1>Rishab & Manvi</h1>
+
+            <p class="subtitle">Are Getting Married</p>
+
+            <div id="countdown" class="countdown">
+                <div>
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+
+            <a href="#welcome" class="btn">Explore</a>
+        </div>
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <section id="welcome" class="section fade-in">
+
+        <h2>Welcome</h2>
+
+        <p>
+            With hearts full of love and gratitude, we invite you to celebrate
+            the beginning of our forever. Your presence will make our special
+            day even more meaningful as we gather with family and friends to
+            create memories that will last a lifetime.
+        </p>
+
+    </section>
+
+    <!-- EVENT DETAILS -->
+    <section class="section details fade-in">
+
+        <h2>Wedding Details</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Date & Time</h3>
+
+                <!-- CHANGE DATE/TIME HERE -->
+                <p>16 November 2026</p>
+                <p>Evening Celebration</p>
+            </div>
+
+            <div class="card">
+                <h3>Venue</h3>
+
+                <!-- CHANGE VENUE DETAILS HERE -->
+                <p>Orana Aurnum</p>
+                <p>New Delhi, India</p>
+
+                <!-- REPLACE GOOGLE MAP LINK -->
+                <a href="#" target="_blank" class="map-btn">
+                    View on Google Maps
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section class="section fade-in">
+
+        <h2>RSVP</h2>
+
+        <!-- REPLACE FORM ACTION WITH YOUR FORMSPREE URL -->
+        <form
+            action="https://formspree.io/f/your_endpoint_here"
+            method="POST"
+            class="rsvp-form">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="number"
+                name="guests"
+                placeholder="Number of Guests"
+                min="1">
+
+            <select name="attendance" required>
+                <option value="">Will you attend?</option>
+                <option value="Yes">Yes, I'll be there</option>
+                <option value="No">Sorry, can't make it</option>
+            </select>
+
+            <textarea
+                name="dietary"
+                rows="4"
+                placeholder="Dietary Restrictions">
+            </textarea>
+
+            <button type="submit">
+                Send RSVP
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>We Can't Wait To Celebrate With You</h3>
+        <p>Rishab ❤️ Manvi</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
